@@ -215,20 +215,27 @@ const Home: NextPage = () => {
           <>
             <div className={styles.infoSide}>
               {/* Title of your NFT Collection */}
-              <h1>{contractMetadata?.name}</h1>
+              <h1>NFTape2 By: JohnnyLeeXYZ AKA 0xZurf</h1>
               {/* Description of your NFT Collection */}
               <p className={styles.description}>
-                {contractMetadata?.description}
+                The second NFT album by JohnnyLeeXYZ, formerly known as 0xZurf.
+                This is also the second iteration of the custom audio player.
+                This album consists of 4 tracks of slightly various styles that
+                demonstrate a bit of range in Production skills as well as the
+                music I have produced over the year.
               </p>
+              <h2>Click below to preview.</h2>
             </div>
 
             <div className={styles.imageSide}>
               {/* Image Preview of NFTs */}
-              <img
-                className={styles.image}
-                src={contractMetadata?.image}
-                alt={`${contractMetadata?.name} preview image`}
-              />
+              <a href="https://bafybeicigo3d6vlf2t6to7tlasclwttfy3a7zzbmh6guitblbckzsa3klu.ipfs.nftstorage.link/">
+                <img
+                  className={styles.image}
+                  src="/tapePlayerUI.png"
+                  alt={`${contractMetadata?.name} preview image`}
+                />
+              </a>
 
               {/* Amount claimed so far */}
               <div className={styles.mintCompletionArea}>
@@ -311,13 +318,6 @@ const Home: NextPage = () => {
           </>
         )}
       </div>
-      {/* Powered by thirdweb */}{" "}
-      <img
-        src="/logo.png"
-        alt="thirdweb Logo"
-        width={135}
-        className={styles.buttonGapTop}
-      />
     </div>
   );
 };

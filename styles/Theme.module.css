@@ -17,7 +17,7 @@
 
 .mintInfoContainer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -25,8 +25,6 @@
   min-height: 720px;
   max-width: 95vw;
   gap: 2%;
-  border: 1px solid var(--border-color);
-  border-radius: 16px;
 }
 
 .infoSide {
@@ -169,7 +167,6 @@
 .quantityControlButton:disabled {
   opacity: 0.25;
 }
-
 
 /* On mobile, make the .mintInfoContainer stack vertically */
 @media screen and (max-width: 850px) {
